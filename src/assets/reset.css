@@ -1,0 +1,144 @@
+@charset "utf-8";
+/* CSS Reset*/
+body,
+div,
+p,
+ul,
+ol,
+li,
+textarea,
+form,
+input,
+h1,
+h2,
+h3,
+h4,
+h5,
+dl,
+dt,
+dd,
+img,
+section,
+article,
+aside,
+header,
+footer,
+nav,
+dialog,
+figure,
+hgroup {
+  margin: 0;
+  padding: 0;
+}
+html,
+body {
+  height: 100%;
+}
+body {
+  font: 12px/1.5 Arial, tahoma, arial, sans-serif, "宋体";
+}
+input,
+button,
+select,
+textarea {
+  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+
+  font-family: "Microsoft YaHei";
+  outline: none;
+  vertical-align: middle;
+}
+ul,
+ol,
+li {
+  list-style: none;
+}
+a {
+  cursor: pointer;
+  color: inherit;
+  text-decoration: none;
+}
+a:hover {
+  outline: none;
+}
+img {
+  border: 0;
+}
+section,
+article,
+aside,
+header,
+footer,
+nav,
+dialog,
+figure,
+hgroup {
+  display: block;
+}
+i,
+cite,
+em,
+var,
+address {
+  font-style: normal;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+.ellipsis {
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
+}
+.hidden {
+  display: none;
+}
+
+.clearfix {
+  *zoom: 1; /* for IE6-7 */
+}
+.clearfix:before,
+.clearfix:after {
+  display: table;
+  line-height: 0;
+  content: "";
+}
+.clearfix:after {
+  clear: both;
+}
+
+/*公用css*/
+.borderbox {
+  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+}
+
+.fl {
+  float: left;
+}
+.fr {
+  float: right;
+}
+.posR {
+  position: relative;
+}
+.posA {
+  position: absolute;
+}
+
+/*定义滚动条高宽及背景 高宽分别对应横竖滚动条的尺寸*/
+::-webkit-scrollbar {
+  width: 7px; /*滚动条宽度*/
+  height: 7px; /*滚动条高度*/
+  background-color: white;
+}
+
+/*定义滑块 内阴影+圆角*/
+::-webkit-scrollbar-thumb {
+  cursor: pointer;
+  border-radius: 7px;
+  background-color: rgba(144, 147, 153, 0.3); /*滚动条的背景颜色*/
+}

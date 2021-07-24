@@ -1,0 +1,14 @@
+.flex {
+  display: flex;
+}
+
+// 垂直排版
+.flex-column {
+  @extend .flex;
+  flex-direction: column;
+}
+
+// 占剩余全部
+.flex-1 {
+  flex: 1;
+}
