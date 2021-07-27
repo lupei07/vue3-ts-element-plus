@@ -6,9 +6,20 @@
 .flex-column {
   @extend .flex;
   flex-direction: column;
+  height: 100%;
 }
 
 // 占剩余全部
 .flex-1 {
   flex: 1;
+}
+
+$i: 30;
+@while $i>0 {
+  @each $dir in padding, margin {
+    .#{$dir}-#{$i} {
+      #{$dir}: $i * 1px;
+    }
+  }
+  $i: $i - 5;
 }

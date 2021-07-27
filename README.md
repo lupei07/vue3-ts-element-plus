@@ -1,6 +1,22 @@
+<!--
+ * @Author: lu
+ * @Date: 2021-07-24 14:15:43
+ * @LastEditTime: 2021-07-27 17:59:28
+ * @FilePath: \vue3-ts-study\README.md
+ * @Description:
+-->
+
 # Vue 3 + Typescript + Vite
 
 This template should help get you started developing with Vue 3 and Typescript in Vite.
+
+## Element-plus
+
+[文档](https://element-plus.gitee.io/#/zh-CN/component/dialog)
+
+## Vue3DraggableResizable
+
+[Vue3DraggableResizable](https://github.com/a7650/vue3-draggable-resizable/blob/main/docs/document_zh.md)
 
 ## Recommended IDE Setup
 
