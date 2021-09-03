@@ -1,7 +1,7 @@
 <!--
  * @Author: lu
  * @Date: 2021-07-26 11:05:46
- * @LastEditTime: 2021-07-26 16:10:55
+ * @LastEditTime: 2021-08-24 09:34:17
  * @FilePath: \vue3-ts-study\src\views\login\Index.vue
  * @Description: 
 -->
@@ -26,6 +26,7 @@
 </template>
 <script lang="ts">
 import { defineComponent, reactive, ref, HtmlHTMLAttributes } from "vue";
+import { WSClient } from "../../utils/websocket";
 export default defineComponent({
   name: "Index",
   components: {},
@@ -40,6 +41,8 @@ export default defineComponent({
         console.log(valid);
       });
     }
+    let pdd = new WSClient();
+    console.log("pdd", pdd);
     return { loginForm, onSubmit, loginRef };
   }
 });
