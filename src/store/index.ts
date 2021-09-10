@@ -1,7 +1,7 @@
 /*
  * @Author: lu
  * @Date: 2021-08-02 10:50:30
- * @LastEditTime: 2021-08-24 17:42:13
+ * @LastEditTime: 2021-09-09 14:15:04
  * @FilePath: \vue3-ts-study\src\store\index.ts
  * @Description:
  */
@@ -24,6 +24,7 @@ const store = createStore({
   state() {
     return {
       count: 1,
+      localPrinters: {},
       boxHeight: {
         clientHeight: document.documentElement.clientHeight
       }
@@ -33,6 +34,11 @@ const store = createStore({
     //方法
     incCount(state: any) {
       state.count++;
+    },
+
+    getPrinters(state: any, printers: object) {
+      console.log('localPrinters', printers);
+      state.localPrinters = printers
     }
   },
   getters: {},
