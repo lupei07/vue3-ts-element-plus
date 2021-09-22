@@ -1,7 +1,7 @@
 /*
  * @Author: lu
  * @Date: 2021-09-08 10:16:42
- * @LastEditTime: 2021-09-10 17:27:54
+ * @LastEditTime: 2021-09-13 10:20:35
  * @FilePath: \vue3-ts-study\src\utils\printPdd.ts
  * @Description: 
  */
@@ -46,6 +46,7 @@ class printPdd {
                 let callable = this._notifyTasks[data.requestID] || null;
                 delete this._notifyTasks[data.requestID];
                 if (callable && typeof callable === 'function') {
+                    console.log('data', data);
                     callable(data);
                 }
             }
@@ -93,12 +94,19 @@ class printPdd {
 
 // 打印需要的数据
 class PrintTask extends printPdd {
+    _task: object | undefined
     constructor() {
         super()
+        this._task = {
+            documents: []
+        }
     }
 
+
+
+
     print() {
-        this.getRequestHeader()
+
     }
 }
 
